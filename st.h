@@ -141,3 +141,4 @@ extern unsigned int defaultbg;
 extern float alpha;
 extern float alphaUnfocus;
 extern const int boxdraw, boxdraw_bold, boxdraw_braille;
+

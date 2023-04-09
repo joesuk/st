@@ -1,6 +1,6 @@
 # build of st - the simple (suckless) terminal
 
-originally a fork of [lukesmithxyz st](git@github.com:LukeSmithxyz/st.git).
+originally a fork of [lukesmithxyz st](https://github.com/lukesmithxyz/st).
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional
 features that make it literally the best terminal emulator ever:

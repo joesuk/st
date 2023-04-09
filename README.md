@@ -1,4 +1,6 @@
-# Luke's build of st - the simple (suckless) terminal
+# build of st - the simple (suckless) terminal
+
+originally a fork of [lukesmithxyz st](git@github.com:LukeSmithxyz/st.git).
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional
 features that make it literally the best terminal emulator ever:
@@ -55,21 +57,6 @@ On OpenBSD, be sure to edit `config.mk` first and remove `-lrt` from the
 Be sure to have a composite manager (`xcompmgr`, `picom`, etc.) running if you
 want transparency.
 
-## How to configure dynamically with Xresources
-
-For many key variables, this build of `st` will look for X settings set in
-either `~/.Xdefaults` or `~/.Xresources`. You must run `xrdb` on one of these
-files to load the settings.
-
-For example, you can define your desired fonts, transparency or colors:
-
-```
-*.font:	Liberation Mono:pixelsize=12:antialias=true:autohint=true;
-*.alpha: 0.9
-*.color0: #111
-...
-```
-
 The `alpha` value (for transparency) goes from `0` (transparent) to `1`
 (opaque). There is an example `Xdefaults` file in this respository.
 
@@ -82,8 +69,3 @@ To be clear about the color settings:
 - But if `wal` has run in your session, its colors will take priority.
 
 Note that when you run `wal`, it will negate the transparency of existing windows, but new windows will continue with the previously defined transparency.
-
-## Contact
-
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
